@@ -1,0 +1,21 @@
+# Environment
+venv/
+__pycache__/
+*.pyc
+
+# Data — all gitignored. Annotations are the real work; back them up
+# separately (they are NOT versioned here).
+data/raw/
+data/derived/
+data/annotations/
+data/build/
+
+# QGIS projects — machine-specific layer paths. Template only is tracked.
+qgis/*.qgz
+!qgis/_template.qgz
+*.qgz~
+
+# QGIS / GDAL sidecars
+*.aux.xml
+*.gpkg-shm
+*.gpkg-wal
