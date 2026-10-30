@@ -5,6 +5,7 @@ __pycache__/
 
 # Data — all gitignored. Annotations are the real work; back them up
 # separately (they are NOT versioned here).
+data/fires/
 data/raw/
 data/derived/
 data/annotations/
@@ -19,3 +20,12 @@ qgis/*.qgz
 *.aux.xml
 *.gpkg-shm
 *.gpkg-wal
+
+# Historical Bushfire Boundaries reference data (national geodatabase +
+# per-season splits) — large, regenerable from the source gdb via
+# registry/split_by_season.py, never annotations themselves.
+registry/*.gdb/
+registry/seasons/
+
+# Superseded downloads set aside for deletion (regenerable)
+data/_superseded*/
